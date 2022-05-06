@@ -1,0 +1,10 @@
+[
+    {
+        "APP_ID": "200:100:abc:def:ghi:jkl",
+        "APP_NAME": "Tripe",
+        "APP_DESC": "Tripe is a web application that allows users to create accounts and chat with their friends and family.",
+        "APP_LINK": "https://tripe.herokuapp.com/",
+        "APP_IMG": "https://i.imgur.com/XqQZQZu.png",
+        "APP_VERSION": "1.0.0"
+    }
+]
