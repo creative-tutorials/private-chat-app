@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper{
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 30px;
+  background: #EFECED;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wrapper .content .logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.wrapper .content .firstPage .text{
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 20px 0 0;
+  color: #151D3B;
+}
+.wrapper .content .firstPage .input{
+  margin: 20px 0 0;
+  position: relative;
+}
+.wrapper .content .firstPage .input label{
+  padding-left: 5px;
+}
+.wrapper .content .firstPage .input input {
+  width: 100%;
+  height: 58px;
+  padding-left: 35px;
+  box-sizing: border-box;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  outline: none;
+}
+.wrapper .content .firstPage .input input:focus{
+  border: 2px solid #3f59b8;
+}
+.wrapper .content .firstPage .input i{
+  position: absolute;
+  right: 20px;
+  top: 44px;
+  color: #151D3B;
+  cursor: pointer;
+}
+.wrapper .content .firstPage .submit{
+  margin: 20px 0 0;
+}
+.wrapper .content .firstPage .submit button{
+  padding: 14px 30px;
+  width: 100px;
+  border: none;
+  outline: none;
+  background: #3f59b8;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wrapper .content .secondPage{
+  display: none;
+}
+.wrapper .content .secondPage .text{
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 20px 0 0;
+  color: #151D3B;
+}
+.wrapper .content .secondPage .input{
+  margin: 20px 0 0;
+  /* position: relative; */
+}
+.wrapper .content .secondPage .input label{
+  padding-left: 5px;
+}
+.wrapper .content .secondPage .input input {
+  width: 100%;
+  height: 58px;
+  padding-left: 35px;
+  box-sizing: border-box;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  outline: none;
+}
+.wrapper .content .secondPage .input input:focus{
+  border: 2px solid #3f59b8;
+}
+.wrapper .content .secondPage .submit{
+  margin: 20px 0 0;
+}
+.wrapper .content .secondPage .submit button{
+  padding: 14px 30px;
+  width: 120px;
+  border: none;
+  outline: none;
+  background: #3f59b8;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 282px){
+  .wrapper .content .firstPage .text{
+    font-size: 1em;
+    font-weight: 600;
+    margin: 20px 0 0;
+    color: #151D3B;
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper .content .secondPage .text{
+    font-size: 1em;
+    font-weight: 600;
+    margin: 20px 0 0;
+    color: #151D3B;
   }
+}
+.wrapper.wrapper__hide{
+  display: none;
 }

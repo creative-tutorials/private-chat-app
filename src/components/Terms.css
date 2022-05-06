@@ -1,0 +1,108 @@
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: #06031a;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    display: none;
+}
+.container .content .agreemnt h1{
+    color: #2344b8;
+}
+.container .content .agreemnt p{
+    color: #e3e6ef;
+    font-weight: 500;
+}
+.container .content .agreemnt .agreement_box .ag h3{
+    color: #2344b8;
+    font-size: 1.3em;
+}
+.container .content .agreemnt .agreement_box .ag .tick{
+    margin: 20px 0 0;
+    background: rgb(232, 232, 232);
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+}
+.container .content .agreemnt .agreement_box .ag .tick input[type="checkbox"]{
+    margin-right: 10px;
+    /* margin-left: 10px; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.container .content .agreemnt .agreement_box .ag .tick label{
+    text-align: justify;
+    color: #06031a;
+    font-weight: 600;
+    cursor: pointer;
+}
+.container .content .agreemnt .agreement_box .continue_btn {
+    margin: 20px 0 0;
+}
+.container .content .agreemnt .agreement_box .continue_btn button{
+    width: 100%;
+    max-width: 130px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #2344b8;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #FFF;
+    cursor: pointer;
+}
+@media (max-width: 380px){
+    .container .content .agreemnt h1{
+        font-size: 1.5em;
+    }
+}
+.options{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: #06031a;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    display: none;
+}
+.options .options_box .options_headers h2{
+    color: #2344b8;
+}
+.options .options_box .option .option_header{
+    color: #e3e6ef;
+}
+.options .options_box .option .option_header h3{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.options .options_box .option .option_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options .options_box .option .option_body .optionA{
+    margin: 20px 0 0;
+    background: rgb(232, 232, 232);
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+}
+.container.container__show{
+    display: block;
+}
+.container.container__hide{
+    display: none;
+}
+.options.options__show{
+    display: block;
+}
